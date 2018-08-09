@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Марина Брусницына](https://up.htmlacademy.ru/htmlcss/22/user/827585).
-* Наставник: `Неизвестно`.
+* Наставник: Яна Крикливая (https://htmlacademy.ru/profile/kyarun).
 
 ---
 
