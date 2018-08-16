@@ -6,14 +6,14 @@
 </head>
 <header class="main-header">
   <a class="main-logo" href="index.html">
-    <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип City of Sedona">
+    <img class="main-header-logo" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип «City of Sedona»">
   </a>
   <nav class="main-navigation">
-    <ul class="navigation-list">
-      <li class="navigation-item"><a href="info.html">Информация</a></li>
-      <li class="navigation-item"><a href="gallery.html">Фото и видео</a></li>
-      <li class="navigation-item"><a href="map.html">Карта сайта</a></li>
-      <li class="navigation-item"><a href="site-navigation-current">Гостиницы</a></li>
+    <ul class="main-navigation-list">
+      <li class="main-navigation-item"><a href="info.html">Информация</a></li>
+      <li class="main-navigation-item"><a href="gallery.html">Фото и видео</a></li>
+      <li class="main-navigation-item"><a href="map.html">Карта сайта</a></li>
+      <li class="main-navigation-item-current"><a href="catalog.html">Гостиницы</a></li>
     </ul>
   </nav>
 </header>
@@ -23,73 +23,79 @@
     <h2 class="visually-hidden">Фильтр услуг</h2>
     <!-- Здесь будет форма -->
   </section>
+  <ul class="sorting-list">
+    <li class="sorting-item sorting-item-result">найдено:3</li>
+    <li class="sorting-item sorting-item-title">cортировка:</li>
+    <li class="sorting-item-current"><a class="sorting-item-price" href="price.html">по цене</a></li>
+    <li class="sorting-item"><a class="sorting-item-type" href="type.html">по типу</a></li>
+    <li class="sorting-item"><a class="sorting-item-rating" href="rating.html">по рейтингу</a></li>
+    <li class="sorting-item">
+      <<img class="sorting-button" src="img/arrow-button.jpg" width="5" height="5" alt="переключатели"></li>
+  </ul>
   <section class="catalog">
-    <h2 class="visually-hidden">Поиск жилья в Седоне</h2>
+    <h2 class="visually-hidden"> Результаты поиска жилья в Седоне</h2>
     <ul class="catalog-list">
-      <li class="catalog-item">
+      <li class="hotel-card">
+        <dl class="hotel-card-list">
+          <dt class="hotel-card-term">
         <h3>
-      <a href="catalog-item.html">
-      <span class="catalog-item-title">amara resort & spa</span>
-      </a>
-      </h3>
-        <ul class="catalog-list">
-          <li class="catalog-category">Гостиница</li>
-          <li class="catalog-item-price">от 4000 p.</li>
-        </ul>
-        <p class="user-navigation"><a class="button" href="detail.html">Подробнее</a>
-          <a class="button" href="booking.html">Забронировать</a></p>
-        <p class="catalog-item-image">
-          <a href="catalog-item.html">
-            <img src="img/product-1.jpg" width="50" height="70" alt="Гостиница «аmara resort & spa»">
-          </a></p>
-        <p class="catalog-rating">
-          <img src="http://placehold.it/150x100" alt="4 звезды">
-          <span class="catalog-item-rating">рейтинг:8,5</span></p>
+          <a href="hotel.html">amara resort & spa</a>
+        </h3></dt>
+          <dd class="card-type">Гостиница</dd>
+          <dd class="hotel-card-price">от 4000 p.</dd>
+        </dl>
+        <p class="user-navigation"><a class="button hotel-card-btn hotel-card-btn-more" href="detail.html">Подробнее</a>
+          <a class="button hotel-card-btn hotel-card-btn-book" href="booking.html">Забронировать</a>
+        </p>
+        <img class="hotel-card-img" src="img/product-1.jpg" width="50" height="70" alt="Гостиница «аmara resort & spa»">
+
+        <div class="hotel-rating">
+          <img class="hotel-card-rating-img" src="http://placehold.it/150x100" alt="4 звезды">
+          <p class="hotel-card-rating">рейтинг:8,5</p>
+        </div>
       </li>
 
-      <li class="catalog-item">
+      <li class="motel-card">
+        <dl class="motel-card-list">
+          <dt class="motel-card-term">
         <h3>
-              <a href="catalog-item.html">
-                <span class="catalog-item-title">Desert Quail INN</span>
-                  </a>
-                </h3>
-        <ul class="catalog-list">
-          <li class="catalog-category">Мотель</li>
-          <li class="catalog-item-price">от 3000 p.</li>
-        </ul>
+          <a href="catalog-item.html">Desert Quail INN</a>
+        </h3></dt>
+          <dd class="card-type">Мотель</dd>
+          <dd class="card-price">от 3000 p.</dd>
+        </dl>
         <p class="user-navigation">
-          <a class="button" href="detail.html">Подробнее</a>
-          <a class="button" href="booking.html">Забронировать</a>
+          <a class="button motel-card-btn motel-card-btn-more" href="detail.html">Подробнее</a>
+          <a class="button motel-card-btn motel-card-btn-book" href="booking.html">Забронировать</a>
         </p>
-        <p class="catalog-item-image">
-          <a href="catalog-item.html">
-                  <img src="img/product-1.jpg" width="50" height="70" alt="мотель «desert quail inn»">
-                </a></p>
-        <p class="catalog-rating">
-          <img src="http://placehold.it/150x100" alt="3 звезды">
-          <span class="catalog-item-rating">рейтинг:8,9</span></p>
+        <img class="motel-card-img" src="img/product-1.jpg" width="50" height="70" alt="мотель «desert quail inn»">
+
+        <div class="motel-rating">
+          <img class="motel-card-rating-img" src="http://placehold.it/150x100" alt="3 звезды">
+          <p class="motel-card-rating">рейтинг:8,9</p>
+        </div>
       </li>
-      <li class="catalog-item">
+
+      <li class="appartment-card">
+        <dl class="appartment-card-list">
+          <dt class="appartment-card-term">
         <h3>
-                    <a href="catalog-item.html">
-                      <span class="catalog-item-title">Desert Quail INN</span>
-                        </a>
-                      </h3>
-        <ul class="catalog-list">
-          <li class="catalog-category">Апартаменты</li>
-          <li class="catalog-item-price">от 2000 p.</li>
-        </ul>
+          <a href="catalog-item.html">Desert Quail INN</a>
+        </h3></dt>
+          <dd class="card-type">Апартаменты</dd>
+          <dd class="card-price">от 2000 p.</dd>
+        </dl>
+
         <p class="user-navigation">
-          <a class="button" href="detail.html">Подробнее</a>
-          <a class="button" href="booking.html">Забронировать</a>
+          <a class="button motel-card-btn motel-card-btn-more" href="detail.html">Подробнее</a>
+          <a class="button motel-card-btn motel-card-btn-book" href="booking.html">Забронировать</a>
         </p>
-        <p class="catalog-item-image">
-          <a href="catalog-item.html">
-                        <img src="img/product-1.jpg" width="50" height="70" alt="Апартаменты «Villas at Poco Diablo»">
-                      </a></p>
-        <p class="catalog-rating">
-          <img src="http://placehold.it/150x100" alt="2 звезды">
-          <span class="catalog-item-rating">Рейтинг:9.2</span></p>
+        <img class="appartment-card-img" src="img/product-1.jpg" width="50" height="70" alt="Апартаменты «Villas at Poco Diablo»">
+
+        <div class="appartment-rating">
+          <img class="appartment-card-rating-img" src="http://placehold.it/150x100" alt="2 звезды">
+          <p class="appartment-card-rating">Рейтинг:9.2</p>
+        </div>
       </li>
     </ul>
   </section>
