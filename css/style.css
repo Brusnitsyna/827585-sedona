@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+
+div {
+  background-image: url(background-photo.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-image: url(intro-welcome.svg);
+  background-image: url(intro-mask.svg);
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-navigation-list {
+  list-style: none;
+}
+
+.main-navigation-list a:link {
+  color: #000000;
+}
+
+.main-navigation-list a:visited {
+  color: #766357;
+}
+
+.main-navigation-list a:hover {
+  color: #81b3d2;
+}
+
+.main-navigation-list a:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.main-features h2 {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  font-weight: 700;
+  background-color: #ffffff;
+}
+
+.main-features p {
+  /* font-size: 14px;
+  color: #333333;
+  text-align: center;
+  Эти свойства я могу не писать, потому что они уже в боди прописаны? Также? */
+  line-height: 26px;
+}
+
+.features {
+  list-style: none;
+}
+
+.features-item h3 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+
+.features-item p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}
+
+.features-description li {
+  background-color: rgba(0, 1, 1, 0.2)
+}
+
+.features>li {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.features li:nth-child(2) {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.features li:nth-child(3), .features li:nth-child(4), .features li:nth-child(5), {
+  background-color: #eeeeee;
+}
+
+.search-hotels {
+  background-color: rgba(0, 1, 1, 0.2);
+}
+
+p.search-hotels-subtitle {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+p
