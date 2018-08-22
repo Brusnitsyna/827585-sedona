@@ -12,7 +12,7 @@ body {
   background-color: #f2f2f2;
 }
 
-div {
+.intro {
   background-image: url(background-photo.jpg);
   background-position: top center;
   background-repeat: no-repeat;
@@ -61,11 +61,7 @@ a {
   background-color: #ffffff;
 }
 
-.main-features p {
-  /* font-size: 14px;
-  color: #333333;
-  text-align: center;
-  Эти свойства я могу не писать, потому что они уже в боди прописаны? Также? */
+.main-features-review {
   line-height: 26px;
 }
 
@@ -73,7 +69,7 @@ a {
   list-style: none;
 }
 
-.features-item h3 {
+.features-item-title {
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
@@ -81,7 +77,7 @@ a {
   color: #000000;
 }
 
-.features-item p {
+.features-item-text {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -89,21 +85,16 @@ a {
   text-align: center;
 }
 
-.features-description li {
+.features-item-infra {
   background-color: rgba(0, 1, 1, 0.2)
 }
 
-.features>li {
+.features-item-city, .features-item-attraction {
   color: #ffffff;
   background-color: #81b3d2;
 }
 
-.features li:nth-child(2) {
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-
-.features li:nth-child(3), .features li:nth-child(4), .features li:nth-child(5), {
+.features-item-convenience, .features-item-landscape, .features-item-comfort, {
   background-color: #eeeeee;
 }
 
@@ -111,7 +102,7 @@ a {
   background-color: rgba(0, 1, 1, 0.2);
 }
 
-p.search-hotels-subtitle {
+.subtitle {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -119,4 +110,169 @@ p.search-hotels-subtitle {
   color: #000000;
 }
 
-p
+.input-data {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+}
+
+.searching-form {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #766357;
+}
+
+.searching-button {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #766357;
+  border: none;
+}
+
+.searching-button:hover {
+  background-color: #604e43;
+}
+
+.searching-button:focus {
+  background-color: #503e33;
+}
+
+.searching-form {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #766357;
+}
+
+.searching-form input {
+  font: inherit;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.searching-form input:hover {
+  background-color: #ebebeb;
+}
+
+.searching-form input:focus {
+  background-color: #ffffff;
+  border: solid 2px #e5e5e5;
+}
+
+.button-more {
+  background-color: #a9a9a9;
+}
+
+.button-more:hover {
+  background-color: #000000;
+}
+
+.button-more:focus {
+  background-color: #81b3d2;
+}
+
+.button-less {
+  background-color: #a9a9a9;
+}
+
+.button-less:hover {
+  background-color: #000000;
+}
+
+.button-less:focus {
+  background-color: #81b3d2;
+}
+
+.button-calendar {
+  background-color: #cacaca;
+}
+
+.button-calendar:hover {
+  background-color: #000000;
+}
+
+.button-calendar:focus {
+  background-color: #81b3d2;
+}
+
+.button-submit {
+  font-size: 21px;
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.button-submit:hover {
+  background-color: #669ec0;
+  color: #ffffff;
+}
+
+.button-submit:focus {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer {
+  background-color: #f0f0ef;
+  opacity: 0.9;
+  background-color: rgba(254, 254, 254, 0.9);
+}
+
+.main-footer p {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.footer-social-button {
+  background-color: #81b3d2;
+}
+
+.footer-social-button:hover {
+  background-color: #669ec0;
+}
+
+.footer-social-button:focus {
+  background-color: #5496bd;
+  opacity: 0.3;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.footer-button-htmlacademy {
+  background-color: #231f20;
+}
+
+.footer-button-htmlacademy:hover {
+  background-color: #81b3d2;
+}
+
+.footer-button-htmlacademy:hover {
+  background-color: #bdbbbc;
+}
