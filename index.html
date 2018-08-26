@@ -92,15 +92,20 @@
         <input class="date-of-departure" type="text" name="date-of-departure" id="date-of-departure-field" placeholder="4 Июля 2017">
         <button class="button-calendar" type="button"></button>
 
-        <label for="number-of-adults-field">Взрослые</label>
-        <input type="number" name="number-of-adults" id="number-of-adults-field" placeholder="2">
-        <button class="button-less" type="button">-</button>
-        <button class="button-more" type="button">+</button>
-
-        <label for="number-of-children-field">Дети</label>
-        <input type="number" name="number-of-children" id="number-of-children-field" placeholder="0">
-        <button class="button-less" type="button">-</button>
-        <button class="button-more" type="button">+</button>
+        <ul class="field-counter-list">
+          <li class="field-counter">
+            <label for="field-counter-adults">Взрослые</label>
+            <input class="field-counter-input" type="number" name="number-of-adults" id="field-counter-adults" placeholder="2">
+            <button class="field-counter-btn" type="button">-</button>
+            <button class="field-counter-btn" type="button">+</button>
+          </li>
+          <li class="field-counter">
+            <label for="field-counter-children">Дети</label>
+            <input class="field-counter-input" type="number" name="number-of-children" id="field-counter-children" placeholder="0">
+            <button class="field-counter-btn" type="button">-</button>
+            <button class="field-counter-btn" type="button">+</button>
+          </li>
+        </ul>
         <button class="button-submit" type="submit">Найти</button>
       </form>
       <div class="map"><img src="img/map.jpg" width="1200" height="593" alt="Карта"></div>

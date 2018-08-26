@@ -173,27 +173,15 @@ a {
   border: solid 2px #e5e5e5;
 }
 
-.button-more {
+.field-counter-btn {
   background-color: #a9a9a9;
 }
 
-.button-more:hover {
+.field-counter-btn:hover {
   background-color: #000000;
 }
 
-.button-more:focus {
-  background-color: #81b3d2;
-}
-
-.button-less {
-  background-color: #a9a9a9;
-}
-
-.button-less:hover {
-  background-color: #000000;
-}
-
-.button-less:focus {
+.field-counter-btn:focus {
   background-color: #81b3d2;
 }
 

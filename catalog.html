@@ -24,17 +24,17 @@
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>Инфраструктура:</legend>
-        <ul>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimming-pool" id="swimming-pool-field" checked>
+        <ul class="option-list">
+          <li class="option">
+            <input class="visually-hidden option-input option-input-checkbox" type="checkbox" name="swimming-pool" id="swimming-pool-field" checked>
             <label for="swimming-pool-field">Бассейн</label>
           </li>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking-field">
+          <li class="option">
+            <input class="visually-hidden option-input option-input-checkbox" type="checkbox" name="parking" id="parking-field">
             <label for="parking-field">Парковка</label>
           </li>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi-field">
+          <li class="option">
+            <input class="visually-hidden option-input option-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi-field">
             <label for="wi-fi-field">Wi-Fi</label>
           </li>
         </ul>
@@ -42,27 +42,31 @@
       <fieldset>
         <legend>Тип жилья:</legend>
         <ul>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel-field" checked>
+          <li class="option">
+            <input class="visually-hidden option-input option-input-checkbox" type="checkbox" name="hotel" id="hotel-field" checked>
             <label for="hotel-field">Гостиница</label>
           </li>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel-field" checked>
+          <li class="option">
+            <input class="visually-hidden option-input option-input-checkbox" type="checkbox" name="motel" id="motel-field" checked>
             <label for="motel-field">Мотель</label>
           </li>
-          <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="appartment" id="appartment-field" checked>
+          <li class="option">
+            <input class="visually-hidden option-input option-input-checkbox" type="checkbox" name="appartment" id="appartment-field" checked>
             <label for="appartment-field">Аппартаменты</label>
           </li>
         </ul>
       </fieldset>
       <fieldset>
         <legend>Стоиость в сутки (Р):</legend>
-        <span class="range-table"></span>
-        <!--Это картинка диапозона цены от 0р до 3000р-->
-        <input class="visually-hidden filter-range" type="range" min="0" max="3000">
-        <button class="button-range button-range-more"></button>
-        <button class="button-range button-range-less"></button>
+        <ul>
+          <li class="filter-range">
+            <label class="visually-hidden">Поле для ввода стоимости
+        <input class="filter-range-input" type="number" name="range-from" placeholder="от 0">
+        <input class="filter-range-input" type="number" name="range-to" placeholder="до 3000">
+        </label>
+            <input class="visually-hidden filter-range" type="range" min="0" max="3000">
+          </li>
+        </ul>
       </fieldset>
       <button type="submit" class="filter-button button">Показать</button>
     </form>
@@ -71,8 +75,8 @@
   <section class="sorting">
     <h2 class="visually-hidden">Поле результатов поиска жилья<h2>
     <p class="result-of-search">найдено:3</p>
-    <ul class="sorting-list">
-      <li class="sorting-item sorting-item-title">cортировка:</li>
+      <h3 class="sorting-item-title">cортировка:</h3>
+        <ul class="sorting-list">
       <li class="sorting-item-current">
         <a class="sorting-item-price" href="price.html">по цене</a></li>
       <li class="sorting-item">
