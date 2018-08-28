@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
     <nav class="main-navigation">
       <ul class="main-navigation-list">
         <li class="main-navigation-item"><a href="info.html">Информация</a></li>
-        <li class="main-navigation-item"><a href="gallery.html">Фото и видео</a></li>
+        <li class="main-navigation-item main-navigation-item-foto"><a href="gallery.html">Фото и видео</a></li>
         <li class="main-navigation-item"><a href="map.html">Карта сайта</a></li>
         <li class="main-navigation-item-current"><a href="catalog.html">Гостиницы</a></li>
       </ul>
@@ -84,24 +84,28 @@
       <p class="input-data">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <form class="searching-form" action="https://echo.htmlacademy.ru" method="post">
         <button class="searching-button" type="button">Поиск гостиницы в Седоне</button>
-        <label for="date-of-entry-field">Дата заезда:</label>
-        <input class="date-of-entry" type="text" name="date-of-entry" id="date-of-entry-field" placeholder="24 Апреля 2017">
-        <button class="button-calendar" type="button"></button>
-
-        <label for="date-of-departure-field">Дата выезда</label>
-        <input class="date-of-departure" type="text" name="date-of-departure" id="date-of-departure-field" placeholder="4 Июля 2017">
-        <button class="button-calendar" type="button"></button>
-
+        <ul class="field-reserve-list">
+          <li class="field-reserve">
+            <label class="field-reserve-label" for="date-of-entry-field">Дата заезда:</label>
+            <input class="field-input field-reserve-input" type="text" name="date-of-entry" id="date-of-entry-field" placeholder="24 Апреля 2017">
+            <button class="field-reserve-btn" type="button"></button>
+          </li>
+          <li class="field-reserve">
+            <label for="field-reserve-label">Дата выезда</label>
+            <input class="field-input field-reserve-input" type="text" name="date-of-departure" id="date-of-departure-field" placeholder="4 Июля 2017">
+            <button class="field-reserve-btn" type="button"></button>
+          </li>
+        </ul>
         <ul class="field-counter-list">
           <li class="field-counter">
             <label for="field-counter-adults">Взрослые</label>
-            <input class="field-counter-input" type="number" name="number-of-adults" id="field-counter-adults" placeholder="2">
+            <input class="field-input field-counter-input" type="number" name="number-of-adults" id="field-counter-adults" placeholder="2">
             <button class="field-counter-btn" type="button">-</button>
             <button class="field-counter-btn" type="button">+</button>
           </li>
           <li class="field-counter">
             <label for="field-counter-children">Дети</label>
-            <input class="field-counter-input" type="number" name="number-of-children" id="field-counter-children" placeholder="0">
+            <input class="field-input field-counter-input" type="number" name="number-of-children" id="field-counter-children" placeholder="0">
             <button class="field-counter-btn" type="button">-</button>
             <button class="field-counter-btn" type="button">+</button>
           </li>
