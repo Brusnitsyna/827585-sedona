@@ -2,9 +2,10 @@
 <html lang="ru">
 
 <head>
+  <meta charset="utf-8">
   <title>Каталог услуг</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -32,11 +33,11 @@
             <legend class="option-legend">Инфраструктура:</legend>
             <ul class="option-list">
               <li class="option">
-                <input class="visually-hidden option-input option-input-checkbox" type="checkbox" name="swimming-pool" id="swimming-pool-field" disabled checked>
+                <input class="visually-hidden option-input option-input-checkbox" type="checkbox" name="swimming-pool" id="swimming-pool-field" checked>
                 <label class="option-label" for="swimming-pool-field">Бассейн</label>
               </li>
               <li class="option">
-                <input class="visually-hidden option-input option-input-checkbox" type="checkbox" name="parking" id="parking-field" disabled>
+                <input class="visually-hidden option-input option-input-checkbox" type="checkbox" name="parking" id="parking-field">
                 <label class="option-label" for="parking-field">Парковка</label>
               </li>
               <li class="option">
@@ -65,8 +66,8 @@
           <div class="filter-range">
             <div class="filter-range-title">Стоимость в сутки (р):</div>
             <div class="price-controls">
-              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              <label class="min-price">от <output type="text" name="min-price">0</output></label>
+              <label class="max-price">до <output type="text" name="max-price">3000</output></label>
             </div>
             <div class="range-controls">
               <div class="scale">
@@ -81,7 +82,7 @@
       </section>
       <section class="sorting">
         <h2 class="visually-hidden">Поле результатов поиска жилья</h2>
-        <p class="sorting-result">найдено:3</p>
+        <p class="sorting-result">найдено: 3</p>
         <h3 class="sorting-item-title">cортировка:</h3>
         <ul class="sorting-list">
           <li class="sorting-item sorting-item-selected">
@@ -118,7 +119,7 @@
             </div>
           </div>
           <div class="hotel-card-img">
-            <img src="img/hotel.jpg" width="135" height="90" alt="Гостиница «аmara resort & spa»">
+            <img src="img/hotel.jpg" width="135" height="90" alt="Гостиница «Amara Resort & Spa»">
           </div>
           <div class="hotel-card-rating">
             <img class="hotel-rating-img" src="img/star.svg" width="18" height="17" alt="4 звезды">
@@ -142,7 +143,7 @@
               <a class="button hotel-card-btn hotel-card-btn-book" href="booking.html">Забронировать</a>
             </p>
           </div>
-          <img class="hotel-card-img" src="img/motel.jpg" width="135" height="90" alt="мотель «desert quail inn»">
+          <img class="hotel-card-img" src="img/motel.jpg" width="135" height="90" alt="Мотель «Desert Quail Inn»">
           <div class="hotel-card-rating">
             <img class="hotel-rating-img" src="img/star.svg" width="18" height="17" alt="3 звезды">
             <img class="hotel-rating-img" src="img/star.svg" width="18" height="17" alt="3 звезды">
