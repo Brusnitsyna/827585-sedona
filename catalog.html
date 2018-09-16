@@ -5,7 +5,7 @@
   <title>Каталог услуг</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="inner-page">
@@ -19,7 +19,7 @@
           <li class="main-navigation-item"><a href="info.html">Информация</a></li>
           <li class="main-navigation-item"><a href="gallery.html">Фото и видео</a></li>
           <li class="main-navigation-item"><a href="map.html">Карта сайта</a></li>
-          <li class="main-navigation-item"><a href="catalog.html">Гостиницы</a></li>
+          <li class="main-navigation-item main-navigation-item-selected"><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -32,11 +32,11 @@
             <legend class="option-legend">Инфраструктура:</legend>
             <ul class="option-list">
               <li class="option">
-                <input class="visually-hidden option-input option-input-checkbox" type="checkbox" name="swimming-pool" id="swimming-pool-field" checked>
+                <input class="visually-hidden option-input option-input-checkbox" type="checkbox" name="swimming-pool" id="swimming-pool-field" disabled checked>
                 <label class="option-label" for="swimming-pool-field">Бассейн</label>
               </li>
               <li class="option">
-                <input class="visually-hidden option-input option-input-checkbox" type="checkbox" name="parking" id="parking-field">
+                <input class="visually-hidden option-input option-input-checkbox" type="checkbox" name="parking" id="parking-field" disabled>
                 <label class="option-label" for="parking-field">Парковка</label>
               </li>
               <li class="option">
@@ -84,7 +84,7 @@
         <p class="sorting-result">найдено:3</p>
         <h3 class="sorting-item-title">cортировка:</h3>
         <ul class="sorting-list">
-          <li class="sorting-item sorting-item-current">
+          <li class="sorting-item sorting-item-selected">
             <a class="sorting-item-price" href="price.html">по цене</a></li>
           <li class="sorting-item">
             <a class="sorting-item-type" href="type.html">по типу</a></li>
@@ -97,7 +97,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
   </a>
             </li>
-            <li><a class="button-dir" href="#"><span class="visually-hidden">Кнопка вниз</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a></li>
+            <li class="button-dir-selected"><a class="button-dir" href="#"><span class="visually-hidden">Кнопка вниз</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a></li>
           </ul>
         </div>
       </section>
