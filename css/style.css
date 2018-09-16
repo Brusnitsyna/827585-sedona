@@ -862,6 +862,7 @@ input::-webkit-input-placeholder {
 .option-label {
   position: relative;
   display: block;
+  cursor: pointer;
 }
 
 .option-input-checkbox+label::before {
