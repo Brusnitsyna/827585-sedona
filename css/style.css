@@ -16,6 +16,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
+  background-color: #ffffff;
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
@@ -144,8 +145,8 @@ img {
   height: 509px;
   background-color: #ffffff;
   background-image: url("../img/intro-welcome.svg"), url("../img/intro-mask.svg"), url("../img/background.jpg");
-  background-position: center, bottom, top;
-  background-size: 459px 353px, auto, 100%;
+  background-size: 459px 353px, 1200px 57px, 100%;
+  background-position: center, bottom, 50% 28%;
   background-repeat: no-repeat;
   margin-bottom: 60px;
 }
@@ -207,13 +208,18 @@ img {
   padding-top: 45px;
   padding-left: 45px;
   padding-right: 50px;
-  padding-bottom: 45px;
+  padding-bottom: 41px;
 }
 
 .features-img-container {
   max-height: 256px;
   overflow: hidden;
-}
+  }
+
+  .features-img-container img {
+   position: relative;
+   top: -78px;
+  }
 
 .features-item-title {
   width: 150px;
@@ -252,11 +258,15 @@ img {
   padding-right: 55px;
   padding-left: 55px;
 }
+.features-item-additional {
+  width: 100%;
+}
 
 .feature-list-infra {
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
   display: flex;
 }
 
@@ -314,7 +324,7 @@ img {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  padding-top: 48px;
+  padding-top: 46px;
   padding-right: 68px;
   padding-left: 68px;
   padding-bottom: 59px;
@@ -870,13 +880,13 @@ input::-webkit-input-placeholder {
   position: absolute;
   left: -40px;
   top: 0;
-  width: 27px;
+  width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   cursor: pointer;
-}
+  }
 
 .option-input-checkbox:checked+label::before {
   content: "";
@@ -913,6 +923,14 @@ input::-webkit-input-placeholder {
   background-image: url("../img/checkbox-on-disabled.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.option-input-checkbox:focus+label::before {
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.option-input-checkbox:checked:focus+label::before {
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .filter-range {
@@ -1008,22 +1026,28 @@ input::-webkit-input-placeholder {
 
 .range-toggle {
   position: absolute;
-  top: -9px;
-  width: 4px;
-  height: 4px;
-  background: #ababab;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 21px;
+  height: 21px;
+  padding: 0;
   border: 8px solid #ffffff;
+  font-size: 0;
+  line-height: 0;
   border-radius: 50%;
+  background-color: #ababab;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
 .range-toggle:hover {
-  border: 9px solid #ffffff;
+  width: 24px;
+  height: 24px;
+  border-width: 9px;
 }
 
 .range-toggle-min {
-  left: 0;
+  left: 20px;
 }
 
 .range-toggle-max {
